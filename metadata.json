@@ -1,0 +1,6 @@
+{
+  "name": "Lumora Gallery",
+  "description": "A premium, secure local gallery application with an elegant design and private vault.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

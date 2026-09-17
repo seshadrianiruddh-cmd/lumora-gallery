@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Outer Aperture Ring / Frame -->
+    <path
+        android:strokeWidth="4"
+        android:strokeColor="#818CF8"
+        android:strokeLineCap="round"
+        android:pathData="M 34,34 L 74,34 L 74,74 L 34,74 Z" />
+
+    <!-- Stylish Aperture Blade / 'L' inspiration curve -->
+    <path
+        android:strokeWidth="5"
+        android:strokeColor="#FBBF24"
+        android:strokeLineCap="round"
+        android:pathData="M 34,74 L 34,44 C 34,34 54,34 54,54" />
+
+    <!-- Aperture Center Glowing Pupil / Warm light accent -->
+    <path
+        android:pathData="M 54,54 m -8,0 a 8,8 0 1,1 16,0 a 8,8 0 1,1 -16,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="54"
+                android:centerY="54"
+                android:gradientRadius="8"
+                android:type="radial">
+                <item android:color="#FBBF24" android:offset="0.0" /> <!-- Warm Gold -->
+                <item android:color="#FBBF24" android:offset="0.4" />
+                <item android:color="#E0F2FE" android:offset="1.0" /> <!-- Light Sky Blue -->
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Floating geometric accent dots -->
+    <path
+        android:fillColor="#818CF8"
+        android:pathData="M 74,34 m -3,0 a 3,3 0 1,1 6,0 a 3,3 0 1,1 -6,0" />
+    <path
+        android:fillColor="#FBBF24"
+        android:pathData="M 34,74 m -3,0 a 3,3 0 1,1 6,0 a 3,3 0 1,1 -6,0" />
+</vector>
